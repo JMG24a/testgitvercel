@@ -29,4 +29,4 @@ function ormErrorHandler (err, req, res, next){
   next(err)
 }
 
-module.exports = { errorHandler, boomErrorHandler, ormErrorHandler }
+module.exports = { errorHandler, boomErrorHandler, ormErrorHandler}
