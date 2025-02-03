@@ -4,6 +4,8 @@ const express = require('express');
 const cors = require('cors');
 // my dependencies
 const { boomErrorHandler, errorHandler, ormErrorHandler } = require('./middleware/error.handler');
+const appRouter = require('./router');
+
 //constants
 const app = express();
 
@@ -25,6 +27,7 @@ app.get('/',
 });
 
 app.use(express.json());
+appRouter(app);
 app.use(cors(optionsCors));
 app.use(boomErrorHandler);
 app.use(ormErrorHandler);
