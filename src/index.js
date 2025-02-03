@@ -30,8 +30,8 @@ app.use(boomErrorHandler);
 app.use(ormErrorHandler);
 app.use(errorHandler);
 
-app.listen(3001, ()=>{
-  console.log("vercel")
-})
+// app.listen(3001, ()=>{
+//   console.log("vercel")
+// })
 
 module.exports = app;
